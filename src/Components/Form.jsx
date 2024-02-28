@@ -10,7 +10,7 @@ const Form = ({card}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        if(pasajero.nombre.length >= 3 && pasajero.apellido.length >= 6){
+        if(pasajero.nombre.trim() && pasajero.nombre.length >= 3 && pasajero.apellido.length >= 6){
             setVer(true)
             setError(false)
         } else {
